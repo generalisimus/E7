@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	{% if message %}
+		<p> {{ message }} </p>
+	{% endif %}
+	<div class="form">
+		<form action="" method='POST'>
+			<label for="comments">Добавить коментарий</label>
+			<input type="text" name="comments">
+			<button type="submit"> Добавить </button>
+		</form>
+	</div>
+	
+</body>
+</html>

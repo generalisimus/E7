@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="conteiner">
+		<h1>Доска объявлений</h1>
+		<div>
+			{% if message %}
+				<p>{{ message }}</p>
+			{% endif %}
+
+			{% for name in names %}
+				<li> {{ name }} </li>
+			{% endfor %}
+		</div>
+		<div class="form">
+			<form action="" method='POST'>
+				<label for="name">Введите свое имя</label>
+				<input type="text" name="name">
+				<label for="title">Введите заголовок</label>
+				<input type="text" name="title">
+				<label for="message">Введите сообщение</label>
+				<input type="text" name="message">
+				<label for="comments">Добавить коментарий</label>
+				<input type="text" name="comments">
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+
+	</div>
+	
+</body>
+</html>
